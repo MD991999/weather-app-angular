@@ -1,0 +1,148 @@
+<div class="banner">
+    <img class="line-break1" src="../assets/images/background.png" alt="backgroundimage">
+    <img class="line-break2" src="../assets/images/meteor.png" alt="meteor">
+    <div class="line-break3">
+        <h1>ClimaCast</h1>
+        <p>Learn more about the weather details of different cities..</p>
+        <a type="button" class="btn bg-light" href="">Explore..</a>
+    </div>
+    <img class="line-break4" src="../assets/images/4.png" alt="image">
+    <img class="line-break5" src="../assets/images/5.png" alt="image">
+    <img class="line-break6" src="../assets/images/6.png" alt="image">
+</div>
+
+<div class="content">
+    <h1>ClimaCast</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa assumenda, reprehenderit quidem ullam vitae
+        animi. Adipisci perferendis totam pariatur rerum ab temporibus quis cupiditate accusantium excepturi illo ea
+        eaque consequatur harum repellat, iure a blanditiis veniam fuga, maxime ratione nisi doloremque. Obcaecati vel
+        commodi atque, error a ab fugit eveniet officiis! Cumque reprehenderit nobis sed recusandae mollitia doloribus?
+        Maiores delectus architecto reiciendis voluptatem deserunt voluptatum fugit, similique quas distinctio! Iste
+        alias tempore voluptatum consequuntur. Temporibus facilis modi ad, dolore voluptatibus saepe ducimus nobis
+        aspernatur inventore consequuntur veritatis labore aliquid hic illo eos quod cum ipsam laboriosam libero ea id
+        quae. Illum soluta, consequuntur nam saepe odio, molestiae aliquid recusandae ea repellat voluptatibus quis, quo
+        quidem quos cum perferendis tempora obcaecati vitae molestias sunt ipsam fugit eius perspiciatis esse eveniet.
+        Totam eum nemo hic distinctio cupiditate libero eaque aspernatur? Temporibus, quam! Natus, officia enim ea
+        perspiciatis culpa nostrum a, velit, reiciendis amet aut quaerat. Alias ullam amet sequi illum dignissimos
+        veniam earum, asperiores autem laboriosam? Quo ut voluptatum, similique eum sit aut, eveniet distinctio
+        consequuntur quisquam a nobis iure quis neque at? Excepturi, dignissimos molestias! Rem adipisci id, sequi
+        dolore consectetur distinctio eaque laboriosam soluta suscipit similique voluptates eos nemo repellat beatae cum
+        alias perspiciatis possimus laudantium saepe, aliquid corrupti. Velit quam, culpa quo at aperiam natus eos animi
+        optio delectus odio totam reiciendis est nostrum officia vel numquam magnam? Reprehenderit reiciendis porro
+        aperiam dolores aliquid, labore temporibus pariatur itaque vero ad illo, tenetur eos excepturi sint hic,
+        dignissimos commodi possimus facere. Aut asperiores eum quam repudiandae cupiditate ipsa nulla maiores magni,
+        esse, itaque maxime accusantium sint at unde sed quas! Illum tempora labore veritatis at soluta vitae iure
+        dolorem totam provident veniam nam a, voluptatibus facere distinctio quia error, mollitia laborum in maiores
+        quis aut qui neque illo. Velit!</p>
+</div>
+
+<div class="content-details-location">
+    <div class="content-details-location-subdiv">
+        <div class="search-button">
+            <form action="">
+                <input name="placename" [(ngModel)]="input" (change)="submit()" type="search" class="btn form-control"
+                    placeholder="Search locations">
+
+            </form>
+        </div>
+        <div class="row parent-div-child2">
+            <!-- <h1>Locations</h1> -->
+            <div class="col-3">
+                <!-- <img src="https://img.freepik.com/premium-photo/beautiful-multi-color-splash-liquid-paint-3d-illustration-3d-visualization_158469-7823.jpg?w=740" alt=""> -->
+                <img src="https://img.freepik.com/premium-vector/abstract-fluid-design-element-minimalistic-background-text-wavy-bubble-banner-poster-clipart-with-lines-dots-gradient-liquid-blue-flat-shape-geometric-color-illustration-isolated-vector_106317-13541.jpg?w=740"
+                    alt="">
+            </div>
+            <div class="col-6 parent-child1">
+                <div class="image-session">
+                    <img src="../assets/images/sunny-day.jpg" *ngIf="temperature>20">
+
+                    <img src="../assets/images/winter-day.jpg" *ngIf="temperature<20">
+                    
+                    <div class="country-temperature">
+                        <div class="country-name">
+                            {{name}}
+                        </div>
+                        <div *ngIf="temperature" class="temperature-celsius">
+                            {{temperature}} &#176;C
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-session">
+                    <img src="http://openweathermap.org/img/wn/{{icon}}@2x.png" alt="">
+
+                    <p>{{nature}}</p>
+                </div>
+
+                <div class="humidity-pressure-wind-property">
+                    <div>
+                        <img src="https://static.thenounproject.com/png/2450449-200.png" alt="icon for country">
+
+                        <p class="day">Country</p>
+                        <p class="day"> {{country}}</p>
+
+                    </div>
+                    <div>
+                        <img src="https://www.nicepng.com/png/detail/595-5950115_wind-speed-98-102-filled-icon-wind.png"
+                            alt="icon for wind">
+
+                        <p class="day">Wind Speed</p>
+                        <p *ngIf="speed" class="day"> {{speed}} km/h</p>
+
+                    </div>
+                    <div>
+                        <img src="https://thumbs.dreamstime.com/b/humidity-icon-flat-style-climate-vector-illustration-white-isolated-background-temperature-forecast-business-concept-143479748.jpg"
+                            alt="humidity-icon">
+
+                        <p class="day1">Humidity</p>
+                        <p class="day">{{humidity}}</p>
+                    </div>
+                    <div>
+                        <img src="https://thumbs.dreamstime.com/b/thermometer-cloud-low-temperature-icon-simple-glyph-vector-weather-set-ui-ux-website-mobile-application-white-156322789.jpg"
+                            alt="pressure-icon ">
+                        <p class="day2">Pressure</p>
+                        <p class="day">{{pressure}}</p>
+
+                    </div>
+                    <!-- <div></div> -->
+                </div>
+
+            </div>
+            <div class="col-3 last-final">
+                <img src="https://img.freepik.com/premium-vector/abstract-fluid-design-element-minimalistic-background-text-wavy-bubble-banner-poster-clipart-with-lines-dots-gradient-liquid-blue-flat-shape-geometric-color-illustration-isolated-vector_106317-22253.jpg?w=740"
+                    alt="">
+            </div>
+
+            <!-- <div class="col-5 parent-child2">
+                <div class="parent-child2-details-div">
+                    <h1>Todays Report</h1>
+                    <img src="http://openweathermap.org/img/wn/{{icon}}@2x.png" alt="">
+                    <div class="heading-paragraph-temperature">
+                        <p>{{nature}}</p>
+                        <img src="" alt="">
+                        <h1>{{temperature}}</h1>
+                    </div>
+                    <div class="all-details-in-one">
+                        <div class="sun-speed">
+                            <img src="" alt="">
+                            <p class="speed-rate">{{speed}}</p>
+                            <p class="day">Sun</p>
+                        </div>
+                        <div class="humidity">
+                            <img src="" alt="">
+                            <p class="speed-rate">{{humidity}}</p>
+                            <p class="day">Humidity</p>
+                        </div>
+                        <div class="chance-of-rain">
+                            <img src="" alt="">
+                            <p class="speed-rate">{{pressure}}</p>
+                            <p class="day">Pressure</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+    </div>
+
+</div>

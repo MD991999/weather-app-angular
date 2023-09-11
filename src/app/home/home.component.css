@@ -1,0 +1,304 @@
+.banner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* display: flex;
+justify-content: center; */
+
+}
+
+.banner img {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.banner a {
+    cursor: auto;
+
+}
+
+.content {
+    background-color: #1d1d4f;
+    color: wheat;
+    text-align: center;
+    padding: 40px;
+    /* z-index: 200; */
+    height: 100vh;
+}
+
+.content h1 {
+    font-size: 80px;
+}
+
+.content p {
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-indent: 50px;
+}
+
+.line-break3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    text-align: center;
+
+}
+
+.line-break3 h1 {
+    margin-top: 80px;
+    font-size: 70px;
+}
+
+.line-break3 p {
+    font-size: 22px;
+    /* transform: translateY(-20px); */
+}
+
+.line-break6 {
+    /* z-index:200; */
+}
+
+.content-details-location {
+    height: 100%;
+    background-color: #1d1d4f;
+    width: 100%;
+    padding: 40px;
+    min-height: 150vh;
+    /* background:linear-gradient(to bottom,rgb(20, 73, 125),rgb(62, 11, 62),rgb(62, 11, 62)); */
+
+}
+
+.content-details-location-subdiv {
+    width: 100%;
+    /* height:100%; */
+    height: 150vh;
+    /* background-color:  rgba(255, 255, 255, 0.05); */
+    background-color: transparent;
+    /* background-image: url('https://thumbs.dreamstime.com/b/vintage-flowers-painting-flowers-soft-color-blur-style-background-oil-48626855.jpg'); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.search-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+.search-button form {
+    margin: 100px;
+
+}
+
+.search-button input {
+    background-color: wheat;
+    /* margin-left: -20px; */
+    text-align: left;
+    width: 25rem;
+    cursor: auto;
+    font-size: 20px;
+}
+
+.parent-div-child2 {
+    width: 100%;
+    /* display: flex;
+flex-direction: row; */
+    padding: 0px;
+    height: 500px;
+    /* background:linear-gradient(to bottom,rgb(84, 20, 84),dodgerblue); */
+position: relative;
+}
+
+.parent-child2 {
+    background-color: transparent;
+    height: 600px;;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.parent-child2-details-div {
+    width: 100%;
+    height: 100%;
+    background-color: #040423;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform-style: preserve-3d;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.heading-paragraph-temperature {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-details-in-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.parent-child1 {
+    /* background:linear-gradient(to bottom,rgb(84, 20, 84),dodgerblue); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+border-radius: 5px;
+/* height: 500px; */
+height:450px;
+position: relative;
+padding: 10px;
+z-index: 198;
+}
+.image-session{
+    width: 100%;
+    height:100%;
+    margin-top:20px;
+    position: relative;
+    /* border-radius: 5px; */
+}
+.image-session img{
+    width:100%;
+    height:95%;
+    background-size: cover;
+    /* z-index: -1; */
+    border-radius: 5px;
+/* margin-bottom: 20px; */
+}
+.country-temperature{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aquamarine; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+background-color: transparent;
+
+}
+.country-name{
+    position: absolute;
+    top:20px;
+    left:10px;
+    font-size: 36px;
+font-weight: 600;
+/* text-shadow: 0 0 2px black; */
+/* color:rgb(72, 91, 6); */
+margin-left:30px;
+color: black;
+}
+.temperature-celsius{
+    position: absolute;
+    top:50px;
+    left:10px;
+    font-weight: 500;
+    /* text-shadow: 0 0 5px black; */
+    /* color:rgb(72, 91, 6); */
+    font-size: 28px;
+    margin-left:30px;
+    margin-top: 10px;
+    color: black;
+
+}
+.sidebar-session{
+position: absolute;
+top:20px;
+right:30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.sidebar-session img{
+    margin-bottom: -20px;
+}
+.sidebar-session p{
+    margin-top:0px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+.humidity-pressure-wind-property{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    width:95%;
+    height:150px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+background-color: transparent;
+
+position: absolute;
+bottom:10px;
+right:10px;
+left:15px;
+top:470px;
+/* overflow-x: hidden; */
+}
+.day{
+    color:white;
+}
+.day1{
+    color:white;
+    margin-top: -10px;
+}
+.day2{
+    color:white;
+    margin-top: -20px;
+}
+.humidity-pressure-wind-property div{
+    background: linear-gradient(to bottom, dodgerblue,rgb(116, 26, 116));
+    width:15%;
+    height:130px;
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    /* color: dodgerblue; */
+}
+.humidity-pressure-wind-property div:nth-child(1) img{
+    width:35%;
+    mix-blend-mode: multiply;
+    height:auto;
+    margin-top:10px;
+}
+.humidity-pressure-wind-property div:nth-child(2) img{
+    width:55%;
+    mix-blend-mode: multiply;
+    height:auto;
+    margin-top:20px;
+}
+.humidity-pressure-wind-property div:nth-child(3) img{
+    width:65%;
+    mix-blend-mode: multiply;
+    height:auto;
+    margin-top:2px;
+    margin-bottom: 0;
+}
+.humidity-pressure-wind-property div:nth-child(4) img{
+    width:65%;
+    mix-blend-mode: multiply;
+    height:auto;
+    margin-top:2px;
+    margin-bottom: 0;
+}
+.last-final{
+    position: absolute;
+    top:-350px;
+    right:150px;
+    /* background-color: aqua; */
+z-index: 1;
+mix-blend-mode: multiply;
+
+}
+.col-3 img{
+    /* mix-blend-mode:luminosity; */
+    mix-blend-mode: multiply;
+    
+}
+/* .col-3:nth-child(2) img{
+    mix-blend-mode: multiply;
+
+} */
